@@ -429,3 +429,8 @@
     text-justify: inter-word;
 
 }
+
+.projectpage{
+    overflow-x:hidden;
+
+}

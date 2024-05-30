@@ -3797,6 +3797,10 @@ html {
   text-justify: inter-word;
 }
 
+.projectpage{
+  overflow-x:hidden;
+}
+
 @media (min-width: 640px) {
   .sm\:btn-sm {
     height: 2rem;
