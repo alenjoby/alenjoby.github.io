@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="theme-ALJO" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="shortcut icon" href="/Portfolio/Images/favicon.ico"><!--icon to show on tab-->
+    <link rel="stylesheet" href="/dist/style.css">
+    <!--Linking external stylsheets-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!--AOS stylesheet-->
+    <script src="/Portfolio/pages/index.js"></script><!--Linking Index.js-->
+</head>
+<body>
+  <!--Navbar Component Daisy Ui-->
+    <div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="index.html">Home </a></li>
+          <li><a href="/Portfolio/pages/Project.html">Projects</a></li>
+          <li><a href="/Portfolio/pages/contact.html">Contact</a></li>
+          <li><a href="/Portfolio/pages/about.html">About</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl writing fadedown">Alen Joby</a>
+  </div>
+  <div class="navbar-center hidden lg:flex fadeup">
+    <ul class="menu menu-horizontal px-1 caviar">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="/Portfolio/pages/Project.html">Projects</a></li>
+      <li><a href="/Portfolio/pages/about.html">About</a></li>
+      <li><a class="nvact" href="/Portfolio/pages/contact.html">Contact</a></li>
+      <li><a href="/Portfolio/pages/credit.html">Credit</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end"><!--End of navbar-->
+    <a class="btn caviar hover:text-red-500 fadedown" onclick="downloadPdf()">Download CV</a><!--Button for downloading CV-->
+  </div>
+  </div>
+
+  <section>
+  
+      <h class="ctext f5" data-aos="fade-down" data-aos-duration="1000">CONTACT ME</h>
+      <!-- DaisyUI Table component-->
+      <div class="ctab">
+        <div class="overflow-x-auto">
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="text-xl">Name</th>
+                <th class="text-xl">Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  <img src="/Portfolio/Images/gmail_icon.png" alt="Gmail Logo" width="50" height="50" data-aos="fade-right" data-aos-duration="1000"><!--Icon Image with Animation-->
+                </th>
+                <td class="ccolor" data-aos="zoom-in" data-aos-duration="1000">Gmail</td>
+                <td><a class="hover:text-red-700" href="https://mail.google.com/mail/u/0/#inbox?compose=new">alenjoby955@gmail.com</a></td>
+              </tr>
+              <tr>
+                <th>
+                  <img src="/Portfolio/Images/linkedin_icon.png" alt="Linkedin Logo" width="50" height="50" data-aos="fade-right" data-aos-duration="1000"><!--Icon Image with Animation-->
+                </th>
+                <td class="ccolor"data-aos="zoom-in" data-aos-duration="1000">Linkedin</td>
+                <td><a class="hover:text-red-700" href="https://www.linkedin.com/in/alen-joby955/">https://www.linkedin.com</a></td>
+              </tr>
+              <tr>
+                <th>
+                  <img src="/Portfolio/Images/youtubeicon.png" alt="Youtube Logo" width="50" height="50" data-aos="fade-right" data-aos-duration="1000"><!--Icon Image with Animation-->
+                </th>
+                <td class="ccolor"data-aos="zoom-in" data-aos-duration="1000">Youtube</td>
+                <td><a class="hover:text-red-700" href="https://www.youtube.com/channel/UCKvoiOQinoKUjfMV344ueCQ">https://www.youtube.com</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+  </section>
+
+
+  <!--AOS Script for Animation-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

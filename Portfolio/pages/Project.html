@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="theme-ALJO" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+     <!--Linking external stylsheets-->
+     <link rel="shortcut icon" href="/Portfolio/Images/favicon.ico"><!--icon to show on tab-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Aos stylesheet-->
+    <link rel="stylesheet" href="/dist/style.css">
+    <script src="/Portfolio/pages/index.js"></script><!--Linking Index.js-->
+</head>
+<body>
+  <!--Using the daisy Ui navbar component-->
+    <div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="../../index.html">Home </a></li>
+          <li><a href="/Portfolio/pages/Project.html">Projects</a></li>
+          <li><a href="/Portfolio/pages/contact.html">Contact</a></li>
+          <li><a href="/Portfolio/pages/about.html">About</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl writing fadedown">Alen Joby</a>
+  </div>
+  <div class="navbar-center hidden lg:flex"data-aos="fade-up">
+    <ul class="menu menu-horizontal px-1 caviar">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a class="nvact" href="/Portfolio/pages/Project.html">Projects</a></li>
+      <li><a href="/Portfolio/pages/about.html">About</a></li>
+      <li><a href="/Portfolio/pages/contact.html">Contact</a></li>
+      <li><a href="/Portfolio/pages/credit.html">Credit</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end"><!--End of Navbar-->
+    <a class="btn caviar hover:text-red-500" data-aos="fade-down" onclick="downloadPdf()">Download CV</a><!--Button for downloading cv-->
+  </div>
+  </div>
+  <!--Container to showcase featured works-->
+  <div class="flex" id="featured">
+    <h1 class="feat caviar" data-aos="fade-up">Featured Work</h1><!--aos for animation-->
+    <!--Card: Daisy Ui component-->
+    <div class="card w-96 bg-base-100 shadow-xl car"data-aos="zoom-in">
+      <figure class="px-10 pt-10">
+        <img src="/Portfolio/Images/Featured Work/recipe.png" alt="recipe page" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class=" f5 card-title">The Aljo Perspective !</h2>
+        <p class="caviar">This Project was made for a detailed overview for a Movie. It was Developed as a part of Sem Assesment.</p>
+        <div class="card-actions">
+          <button class="pt-1 btn btn-primary code" onclick="location.href='https://github.com/Bath-Spa-Students/web-dev-1-a1-set-exercises-alenjoby/tree/main/Chapter-2-Links%20and%20navigation/Exercises/One-Page%20Website'">Know More</button><!--Button redirecting to github project file.-->
+        </div>
+      </div>
+    </div>
+
+    <!--Card: Daisy Ui component-->
+    <div class="card w-96 bg-base-100 shadow-xl car" data-aos="zoom-in">
+      <figure class="px-10 pt-10">
+        <img src="/Portfolio/Images/Featured Work/Petrolcalculator.png" alt="Calculator" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title f5">Petrol calculator!</h2>
+        <p class="caviar">This Project was made to calculate the petrol cost easily. It was a part of My Sem Assesment work</p>
+        <div class="card-actions">
+          <button class=" code pt-2 btn btn-primary" onclick="location.href='https://github.com/Bath-Spa-Students/web-dev-1-a1-set-exercises-alenjoby/tree/main/Chapter-6-Javascript/Exercises/Petrol%20Calculator'">Know More</button><!--Button redirecting to github project file.-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h1 class="featr caviar " data-aos="fade-up">Projects Worked On</h1>
+    <p class="web caviar" data-aos="fade-up-right" id="websites">Websites</p><br>
+  <!--grid container-->
+  <div class="gpt grid-al">  
+    <!--website browser daisyui component-->
+    <div class="mockup-browser border bg-base-300"data-aos="fade-right">
+      <div class="mockup-browser-toolbar">
+        <div class="input">https://aljorecipes.com</div>
+      </div>
+      <div class="flex justify-center px-4 py-16 bg-base-200">
+        <img src="/Portfolio/Images/Web Imgs/recipe.png"><!--Image-->
+      </div>
+    </div>
+    <!--website browser daisyui component-->
+    <div class="mockup-browser border bg-base-300" data-aos="fade-left">
+      <div class="mockup-browser-toolbar">
+        <div class="input">https://html&cssref.com</div>
+      </div>
+      <div class="flex justify-center px-4 py-16 bg-base-200">
+        <img src="/Portfolio/Images/Web Imgs/htmlref.png"><!--Image-->
+      </div>
+    </div>  
+    <!--Website browser daisy ui component-->
+    <div class="mockup-browser border bg-base-300" data-aos="fade-right">
+      <div class="mockup-browser-toolbar">
+        <div class="input">https://Filterpage.com</div>
+      </div>
+      <div class="flex justify-center px-4 py-16 bg-base-200">
+        <img src="/Portfolio/Images/Web Imgs/Filter.png"><!--Image-->
+      </div>
+    </div>
+    <!--Website browser daisy ui component-->
+    <div class="mockup-browser border bg-base-300" data-aos="fade-left">
+      <div class="mockup-browser-toolbar">
+        <div class="input">https://aljostudyplanner.com</div>
+      </div>
+      <div class="flex justify-center px-4 py-16 bg-base-200">
+        <img src="/Portfolio/Images/Web Imgs/planner.png"><!--Image-->
+      </div>
+    </div>
+    
+    <!--Website browser daisy ui component-->
+    <div class="mockup-browser border bg-base-300" data-aos="fade-right">
+      <div class="mockup-browser-toolbar">
+        <div class="input">https://SoundSampler.com</div>
+      </div>
+      <div class="flex justify-center px-4 py-16 bg-base-200">
+        <img src="/Portfolio/Images/Web Imgs/sound.png"><!--Image-->
+      </div>
+    </div>
+    <!--Website browser daisyui component -->
+    <div class="mockup-browser border bg-base-300" data-aos="fade-left">
+      <div class="mockup-browser-toolbar">
+        <div class="input">https://rgbcolorguesser.com</div>
+      </div>
+      <div class="flex justify-center px-4 py-16 bg-base-200">
+        <img src="/Portfolio/Images/Web Imgs/Rgb.png"><!--Image-->
+      </div>
+    </div>
+  </div> 
+  
+  <h1 class="featl caviar" data-aos="fade-up" id="UID">UI Designs</h1><!--Heading-->
+  <!--DaisyUI Carousel Component-->
+  <div class="UI flex">
+    <div class="pt-4 h-96 carousel carousel-vertical rounded-box" data-aos="flip-left" data-aos-duration="1000">
+      <div class="carousel-item h-full">
+        <img src="/Portfolio/Images/Ui/1.png" /><!--Image-->
+      </div> 
+      <div class="carousel-item h-full">
+        <img src="/Portfolio/Images/Ui/2.png" /><!--Image-->
+      </div> 
+      <div class="carousel-item h-full">
+        <img src="/Portfolio/Images/Ui/3.png" /><!--Image-->
+      </div> 
+      <div class="carousel-item h-full">
+        <img src="/Portfolio/Images/Ui/4.png" /><!--Image-->
+      </div> 
+    </div>
+    <p class="f5 UI1" data-aos="fade-left" data-aos-duration="500"> Bathspa Webpage Redesign-1</p>
+  </div>
+
+  <div class="Ui flex">
+    <p class="f5 UI2" data-aos="fade-left" data-aos-duration="500"> Bathspa Webpage Redesign-2</p>
+    <!--DaisyUI Caroussel Component-->
+    <div class="pp pt-4 h-96 carousel carousel-vertical rounded-box" data-aos="flip-left" data-aos-duration="1000">
+      <div class="carousel-item h-full">
+        <img src="/Portfolio/Images/Ui/5.png" /><!--Image-->
+      </div> 
+      <div class="carousel-item h-full">
+        <img src="/Portfolio/Images/Ui/6.png" /><!--Image-->
+      </div> 
+      <div class="carousel-item h-full">
+        <img src="/Portfolio/Images/Ui/7.png" /><!--Image-->
+      </div> 
+    </div>
+  </div>
+
+  <div class="UI flex">
+    <!--DaisyUI Caroussel Component-->
+    <div class="pt-4 h-96 carousel carousel-vertical rounded-box" data-aos="flip-left" data-aos-duration="1000">
+      <div class="carousel-item h-full">
+        <img src="/Portfolio/Images/Ui/8.png" /><!--Image-->
+      </div> 
+      <div class="carousel-item h-fu  ll">
+        <img src="/Portfolio/Images/Ui/9.png" /><!--Image-->
+      </div> 
+      <div class="carousel-item h-full">
+        <img src="/Portfolio/Images/Ui/10.png" /><!--Image-->
+      </div> 
+      <div class="carousel-item h-full">
+        <img src="/Portfolio/Images/Ui/11.png" /><!--Image-->
+      </div> 
+    </div>
+    <p class="f5 UI1" data-aos="fade-left" data-aos-duration="500"> Bathspa Webpage Redesign-3</p>
+  </div>
+
+  <h1 class="featr caviar" data-aos="fade-up">Creative Coding Work</h1>
+  <div class="gpt grid-al">
+    
+    <div class="UI card card-compact w-96 bg-base-100 shadow-xl" data-aos="zoom-in-left">
+      <figure><iframe style="height:300px; width:300px;" src="https://editor.p5js.org/alenjoby955/full/xux4Wj8kO"></iframe></figure><!--Embedding Code art from p5js-->
+      <div class="card-body">
+        <h2 class="f5 card-title">Bathspa SoundWave</h2>
+        <p class="caviar">This a Soundwave Art which responds to the background Audio. It act as a Audio visualizer</p>
+        <div class="card-actions justify-end">
+          <button class="code btn btn-primary" onclick="location.href='https://editor.p5js.org/alenjoby955/full/xux4Wj8kO'">Full-Screen</button><!--Button for making fullscreen-->
+        </div>
+      </div>
+    </div>
+
+    <div class="UI card card-compact w-96 bg-base-100 shadow-xl" data-aos="zoom-in-right">
+      <figure><iframe style="height:300px; width:300px;" src="https://editor.p5js.org/alenjoby955/full/f80YDrDUn"></iframe></figure><!--Embedding Code art from p5js-->
+      <div class="card-body">
+        <h2 class="f5 card-title">Kaledioscope</h2>
+        <p class="caviar">An Art canvas in which we can draw in symmetry. What we draw on one side will be reflected among all sides. hence making a Kaledioscopic art.</p>
+        <div class="card-actions justify-end">
+          <button class="code btn btn-primary" onclick="location.href='https://editor.p5js.org/alenjoby955/full/f80YDrDUn'">Full-Screen</button><!--Button for making fullscreen-->
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <h1 class="featl caviar" data-aos="fade-up" id="games">2D Games</h1>
+  <div class="Ui gpt grid-al">
+    <div class="mockup-browser border-red-600 bg-base-300" data-aos="zoom-in-left" data-aos-duration="1000">
+      <div class="mockup-browser-toolbar">
+        <div class="input hover:text-red-500">https://alen-joby.itch.io/the-lost-city</div><!--Linking website-->
+      </div>
+      <div class="flex justify-center px-4 py-16 bg-base-200">
+        <iframe frameborder="0" src="https://itch.io/embed-upload/9124690?color=333333" allowfullscreen="" width="640" height="380"><a href="https://alen-joby.itch.io/the-lost-city">Play The Lost City on itch.io</a></iframe><!--embedding 2d game from itch.io-->
+      </div>
+    </div>
+
+    <p class="caviar UI1-2" data-aos="fade-right">The lost City: It's is a game that was developed with Twine. It's an intereactive game in which the user is in a 
+      quest to find the Treasure. it is an adeventurous game in which there are option for us to choose. each option lead us to interesting decisions.
+    </p>
+      
+    <p class="caviar UI2-2" data-aos="fade-left" data-aos-duration="500"> Peter Finds The Truth: This was a 2D game made with BITSY 
+      inspired from the story of Peter Parker From the movie spider man. it is a spoof of the original storyline. the characters and their 
+      relation to the hero etc has been changed.
+
+    </p>
+    <div class="mockup-browser border-red-600 bg-base-300" data-aos="zoom-in-right" data-aos-duration="1000">
+      <div class="mockup-browser-toolbar">
+        <div class="input hover:text-red-500">https://alen-joby.itch.io/peterfindsthetruth</div><!--Linking website-->
+      </div>
+      <div class="flex justify-center px-4 py-16 bg-base-200">
+        <iframe frameborder="0" src="https://itch.io/embed-upload/9550556?color=333333" allowfullscreen="" width="640" height="380"><a href="https://alen-joby.itch.io/peterfindsthetruth">Play Peter Finds The Truth ! on itch.io</a></iframe><!--embedding 2d game from itch.io-->
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <p class="more caviar">More Projects Soon !</p>
+
+
+
+ 
+
+
+
+
+<!--Aos Script for Animation-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

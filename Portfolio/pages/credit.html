@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="shortcut icon" href="/Portfolio/Images/favicon.ico"><!--icon to show on tab-->
+    <link rel="stylesheet" href="/dist/style.css">
+    <!--Linking External Stylesheet-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!--Aos Stylesheet-->
+    <script src="/Portfolio/pages/index.js"></script><!--Linking Index.js-->
+</head>
+<body class="abtp">
+  <!--DaisyUI Navbar Component-->
+    <div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="index.html">Home </a></li>
+          <li><a href="/Portfolio/pages/Project.html">Projects</a></li>
+          <li><a href="/Portfolio/pages/contact.html">Contact</a></li>
+          <li><a href="/Portfolio/pages/about.html">About</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl writing fadedown">Alen Joby</a>
+  </div>
+  <div class="navbar-center hidden lg:flex fadeup">
+    <ul class="menu menu-horizontal px-1 caviar">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="/Portfolio/pages/Project.html">Projects</a></li>
+      <li><a href="/Portfolio/pages/about.html">About</a></li>
+      <li><a href="/Portfolio/pages/contact.html">Contact</a></li>
+      <li><a class="nvact" href="/Portfolio/pages/credit.html">Credits</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end"><!--end of navbar-->
+    <a class="btn caviar hover:text-red-500 fadedown" onclick="downloadPdf()">Download CV</a><!--Button for downloading CV-->
+  </div>
+  </div>
+
+
+      <section>
+        <!--Bubble Chat component Daisy UI-->
+        <div class="chatting">
+
+            <div class="chat chat-start">
+                <div class="chat-image avatar">
+                  <div class="w-10 rounded-full" data-aos="fade-left" data-aos-duration="1000">
+                    <img alt="Tailwind CSS chat bubble component" src="/Portfolio/Images/rafia-mam.jpg" /><!--Image-->
+                  </div>
+                </div>
+                <div class="chat-header" data-aos="fade-left" data-aos-duration="1000">
+                  Rafia Mam
+                  <time class="text-xs opacity-50" data-aos="fade-left" data-aos-duration="1000">12:45</time>
+                </div>
+                <div class="chat-bubble"data-aos="fade-left" data-aos-duration="1000">Hey Alen! This website Looks Awesome! How did you make it?</div>
+                <div class="chat-footer opacity-50" data-aos="fade-left" data-aos-duration="1000">
+                  Delivered
+                </div>
+              </div>
+              <div class="chat chat-end">
+                <div class="chat-image avatar">
+                  <div class="w-10 rounded-full" data-aos="fade-right" data-aos-duration="1000"data-aos-delay="200">
+                    <img alt="Tailwind CSS chat bubble component" src="/Portfolio/Images/Me/3.jpg" /><!--Image-->
+                  </div>
+                </div>
+                <div class="chat-header" data-aos="fade-right" data-aos-duration="1000"data-aos-delay="200">
+                  You
+                  <time class="text-xs opacity-50" data-aos="fade-right" data-aos-duration="1000"data-aos-delay="200">1:25</time>
+                </div>
+                <div class="chat-bubble" data-aos="fade-right" data-aos-duration="1000"data-aos-delay="200">Thank You, I used technologies like : Tailwind CSS, Daisy UI, AOS Javascript and Vanilla CSS.</div>
+                <div class="chat-footer opacity-50" data-aos="fade-right" data-aos-duration="1000"data-aos-delay="200">
+                  Seen at 1:26
+                </div>
+              </div>
+
+        </div>
+      </section>
+    <br>
+      <div class="tech flex"><!--Flex Container-->
+        <!--Card Component Daisy UI-->
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1">
+              <img src="/Portfolio/Images/Technology/daisy.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center" data-aos="fade-up" data-aos-duration="2000">
+              <h2 class="card-title">Daisy UI</h2>
+              <p class="techt" >DaisyUI is a CSS framework that is built upon Tailwind CSS. It offers ready-made, modifiable user interface components, saving time and effort during development.</p>
+            </div>
+          </div>
+          <!--Card Component Daisy UI-->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="2">
+              <img src="/Portfolio/Images/Technology/tailwind.jpg" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center" data-aos="fade-up" data-aos-duration="2000">
+              <h2 class="card-title">Tailwind CSS</h2>
+              <p class="techt">Tailwind CSS is a utility-first CSS framework that includes low-level utility classes for creating responsive layouts and UI components.
+            </p>
+            </div>
+          </div>
+          <!--Card Component Daisy UI-->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="3">
+              <img src="/Portfolio/Images/Technology/aos.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center" data-aos="fade-up" data-aos-duration="2000">
+              <h2 class="card-title">AOS</h2>
+              <p class="techt">AOS is a JavaScript package that lets you apply animations to items as they scroll across a webpage.</p>
+            </div>
+          </div>
+          <!--Card Component Daisy UI-->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="4">
+              <img src="/Portfolio/Images/Technology/CSS-Logo.jpg" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center" data-aos="fade-up" data-aos-duration="2000">
+              <h2 class="card-title">Vanilla CSS</h2>
+              <p class="techt">Vanilla CSS is the raw power of CSS, allowing you to style websites from scratch. It is lightweight and provides complete control, although it can be tedious for big tasks. Consider building blocks having limitless possibilities, but needing more work to develop complex structures. 
+            </p>
+            </div>
+          </div>
+
+      </div>
+
+
+
+      <!--AOS script for Animation -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>

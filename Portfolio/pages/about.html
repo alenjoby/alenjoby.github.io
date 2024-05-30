@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="theme-ALJO" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+     <!--Linking external stylsheets-->
+     <link rel="shortcut icon" href="/Portfolio/Images/favicon.ico"><!--icon to show on tab-->
+    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!--Aos stylesheet-->
+    <script src="/Portfolio/pages/index.js"></script><!--Linking Index.js-->
+</head>
+<body class="abtp">
+   <!--Using the daisy Ui navbar component-->
+    <div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="index.html">Home </a></li>
+          <li><a href="/Portfolio/pages/Project.html">Projects</a></li>
+          <li><a href="/Portfolio/pages/contact.html">Contact</a></li>
+          <li><a href="/Portfolio/pages/about.html">About</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl writing fadedown text-green-900">Alen Joby</a>
+  </div>
+  <div class="navbar-center hidden lg:flex fadeup">
+    <ul class="menu menu-horizontal px-1 caviar">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="/Portfolio/pages/Project.html">Projects</a></li>
+      <li><a class="nvact" href="/Portfolio/pages/about.html">About</a></li>
+      <li><a href="/Portfolio/pages/contact.html">Contact</a></li>
+      <li><a href="/Portfolio/pages/credit.html">Credit</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end"><!--End of Navbar-->
+    <a class="btn caviar hover:text-red-500 fadedown" onclick="downloadPdf()">Download CV</a><!--Button for downloading CV-->
+  </div>
+  </div>
+
+  <section>
+
+  <div class="container"><!--Conatiner to hold text and carousell-->
+    <!--text container-->
+    <div class="text-content" data-aos="flip-up" data-aos-duration="1000">
+      <h class="featabout">About Me</h>
+      <p class="caviar UI2-3">I'm <span class="lr Colors">Alen Joby</span>, a passionate creative computing student fueled by a desire to bridge the gap between artistic expression and technical innovation. Ever since I [learned about computer science, technologies etc., I've been fascinated by the potential of using code to create interactive experiences, captivating visuals, and groundbreaking art forms.</p><br>
+      <p class="caviar UI2-3">My experience in <span class="lr">Bsc.Creative Computing</span> has already provided me with access to a wealth of fascinating opportunities. I actively study new technology, hone my abilities, and pick up important life lessons every day. My creative horizons are continuously being broadened by this curriculum, and it is giving me the tools I need to take on new challenges. </p>
+    </div>
+    <!--Carousell component from DaisyUI-->
+    <div class="photo-container cp" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="w-64 carousel rounded-box">
+        <div class="carousel-item w-full">
+          <img src="/Portfolio/Images/Me/2.JPG" class="w-full" alt="Tailwind CSS Carousel component" />
+        </div> 
+        <div class="carousel-item w-full">
+          <img src="/Portfolio/Images/Me/3.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
+        </div> 
+        <div class="carousel-item w-full">
+          <img src="/Portfolio/Images/Me/4.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
+        </div> 
+        <div class="carousel-item w-full">
+          <img src="/Portfolio/Images/Me/5.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
+        </div> 
+        <div class="carousel-item w-full">
+          <img src="/Portfolio/Images/Me/6.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
+        </div> 
+        <div class="carousel-item w-full">
+          <img src="/Portfolio/Images/Me/7.jpg" class="w-full" alt="Tailwind CSS Carousel component" />
+        </div> 
+      </div>
+  </div>
+  </section><br><br>
+
+  <section>
+    <!--Designer to Developer Diff-->
+    <div class="diff aspect-[16/9]" data-aos="fade-left" data-aos-duration="1000">
+      <div class="diff-item-1">
+        <div class="bg-primary text-primary-content text-9xl font-black grid place-content-center">DEVELOPER</div>
+      </div>
+      <div class="diff-item-2">
+        <div class="bg-base-200 text-9xl font-black grid place-content-center">DESIGNER</div>
+      </div>
+      <div class="diff-resizer"></div>
+    </div>
+    
+  </section>
+  <div class="flex flex-col w-full">
+    <div class="divider divider-primary"></div>
+  </div>
+  <section>
+      <h class="feathobby" data-aos="fade-left" data-aos-duration="1000">Hobby</h>
+      <h2 class="caviar UI2-4">Photography</h2>
+      <div class="pt-10 flex gap-4 m-2" data-aos="zoom-out" data-aos-duration="1000">
+        <div class="artboard phone-1"><img src="/Portfolio/Images/Hobby/p2.jpg"></div><!--Image-->
+        <div class="artboard phone-1"><img src="/Portfolio/Images/Hobby/p3.png"></div><!--Image-->
+        <div class="artboard phone-1"><img src="/Portfolio/Images/Hobby/p4.jpg"></div><!--Image-->
+        <div class="artboard phone-1"><img src="/Portfolio/Images/Hobby/p5.jpg"></div><!--Image-->
+        <div class="artboard phone-1"><img src="/Portfolio/Images/Hobby/p1.jpg"></div><!--Image-->
+      </div>
+
+      <div class="flex flex-col w-full">
+        <div class="divider divider-stone"></div>
+      </div>
+
+      <h2 class="caviar UI2-5" data-aos="fade-right" data-aos-duration="1000">Editing</h2><br>
+      <div class="flex" data-aos="zoom-in" data-aos-duration="1000">
+      <!--diff component for comparing-->
+      <div class="diff edit ml-3">
+        <div class="diff-item-1">
+          <img alt="daisy" src="/Portfolio/Images/Hobby/1-2.jpg" /><!--Image-->
+        </div>
+        <div class="diff-item-2">
+          <img alt="daisy" src="/Portfolio/Images/Hobby/1-1.jpg" /><!--Image-->
+        </div>
+        <div class="diff-resizer"></div>
+      </div>
+      <!--diff component for comparing-->
+      <div class="diff edit ml-3">
+        <div class="diff-item-1">
+          <img alt="daisy" src="/Portfolio/Images/Hobby/2-2.jpg" /><!--Image-->
+        </div>
+        <div class="diff-item-2">
+          <img alt="daisy" src="/Portfolio/Images/Hobby/2-1.JPG" /><!--Image-->
+        </div>
+        <div class="diff-resizer"></div>
+      </div>
+      <!--diff component for comparing-->      
+      <div class="diff edit ml-3">
+        <div class="diff-item-1">
+          <img alt="daisy" src="/Portfolio/Images/Hobby/3-2.jpeg" /><!--Image-->
+        </div>
+        <div class="diff-item-2">
+          <img alt="daisy" src="/Portfolio/Images/Hobby/3-1.jpg" /><!--Image-->
+        </div>
+        <div class="diff-resizer"></div>
+      </div>
+      <!--diff component for comparing-->
+      <div class="diff edit ml-3">
+        <div class="diff-item-1">
+          <img alt="daisy" src="/Portfolio/Images/Hobby/4-1.jpg" /><!--Image-->
+        </div>
+        <div class="diff-item-2">
+          <img alt="daisy" src="/Portfolio/Images/Hobby/4-2.JPG" /><!--Image-->
+        </div>
+        <div class="diff-resizer"></div>
+      </div>
+
+      </div>
+
+  </section>
+  <br>
+  <br>
+  <br>
+  <section>
+    <h class="featedu" data-aos="fade-down" data-aos-duration="1000">Education</h>
+    <!--Daisy UI-Timeline Component-->
+    <ul class="timeline timeline-vertical" data-aos="fade-right" data-aos-duration="1000">
+      <li>
+        <div class="timeline-start">2009</div>
+        <div class="timeline-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+        </div>
+        <div class="timeline-end timeline-box">Gulf-Asian English High School</div>
+        <hr/>
+      </li>
+      <li>
+        <hr/>
+        <div class="timeline-start">2011</div>
+        <div class="timeline-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+        </div>
+        <div class="timeline-end timeline-box">India International School</div>
+        <hr/>
+      </li>
+      <li>
+        <hr/>
+        <div class="timeline-start">2020</div>
+        <div class="timeline-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+        </div>
+        <div class="timeline-end timeline-box">CBSE BOARDS 1</div>
+        <hr/>
+      </li>
+      <li>
+        <hr/>
+        <div class="timeline-start">2023</div>
+        <div class="timeline-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+        </div>
+        <div class="timeline-end timeline-box">CBSE BOARDS 2</div>
+        <hr/>
+      </li>
+      <li>
+        <hr/>
+        <div class="timeline-start">2023-2026</div>
+        <div class="timeline-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+        </div>
+        <div class="timeline-end timeline-box">Bsc.Creative Computing (BSU)</div>
+      </li>
+    </ul>
+
+
+  </section>
+  <br>
+  <br>
+  <br>
+
+
+  
+
+  
+  <!--AOS Script for animation-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
