@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="theme-ALJO " lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!--Linking external stylsheets-->
+    <link rel="shortcut icon" href="/Portfolio/Images/favicon.ico"><!--icon to show on tab-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Aos stylesheet-->
+    <link rel="stylesheet" href="dist/style.css">
+    <script src="/Portfolio/pages/index.js"></script><!--Linking Index.js-->
+</head>
+<body>
+  <!--Using the daisy Ui navbar component-->
+    <div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="index.html">Home </a></li>
+          <li><a href="/Portfolio/pages/Project.html">Projects</a></li>
+          <li><a href="/Portfolio/pages/contact.html">Contact</a></li>
+          <li><a href="/Portfolio/pages/about.html">About</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl writing fadedown">Alen Joby</a>
+  </div>
+  <div class="navbar-center hidden lg:flex fadeup">
+    <ul class="menu menu-horizontal px-1 caviar">
+      <li><a class="nvact" href="index.html">Home</a></li>
+      <li><a href="/Portfolio/pages/Project.html">Projects</a></li>
+      <li><a href="/Portfolio/pages/about.html">About</a></li>
+      <li><a href="/Portfolio/pages/contact.html">Contact</a></li>
+      <li><a href="/Portfolio/pages/credit.html">Credit</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end"><!--End of Navbar-->
+    <a class="btn caviar hover:text-red-500 fadedown" onclick="downloadPdf()">Download CV</a><!--Button for downloading CV-->
+  </div>
+  </div>
+  <section>
+  <div class="ME flex"><!--div container for welcome text-->
+    <h1 class="hello font-writing" data-aos="flip-left" data-aos-duration="500">
+        Hello There,<br>
+        I am <span class="text-red-500 Colors">Alen Joby</span>
+    </h1>
+    <!--Data-aos used for getting the animations from AOS library-->
+    <img class="Pro" data-aos="fade-up" data-aos-duration="2000" src="/Portfolio/Images/Alen.png"><!--Adding Image-->
+    
+</div>
+<div class=" bg-white w-full h-screen">
+  <h1 class="text-black underline text-center punk text-7xl pt-100px about hover:text-red-800" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">About</h1><!--About text with hovering effect-->
+
+    <p class="text-center punk text-black ml-32 mr-32 pt-14 pb-14 pl-100px text-4xl " data-aos="fade-right">I'm a First-year Creative Computing student who's super into turning ideas
+       into code.<br> Whether it's building cool websites, making my own games, or animating something awesome, <br>I'm always down to learn and explore the possibilities. Currently, I'm particularly fascinated by Web Development, UI/UX Designing, Interactive storytelling etx. 
+      Buckle up,<br> because I'm on a journey to unlock the creative power of computers!</p>
+
+  </section> 
+  <button class=" bt btn btn-xs sm:btn-sm md:btn-md lg:btn-lg hover:bg-red-500" onclick="location.href='/Portfolio/pages/Project.html'">Know More</button><!--Button redirect to project page-->
+  
+<!--Aos java script-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
